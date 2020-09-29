@@ -92,9 +92,9 @@ public class LoginActivity extends AppCompatActivity {
                         @Override
                         public void onFailure(@NonNull Exception e) {
 
-                            Toast.makeText(LoginActivity.this,"Error",Toast.LENGTH_SHORT).show();
-                            loadingdialog.dismiss();
-                            return;
+                           // Toast.makeText(LoginActivity.this,"Error",Toast.LENGTH_SHORT).show();
+                           // loadingdialog.dismiss();
+                           // return;
 
                         }
                     }).addOnCanceledListener(new OnCanceledListener() {
