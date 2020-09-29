@@ -22,7 +22,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class SignInActivity extends AppCompatActivity {
 
-    private EditText Eemail ,Ppass1 , Ppass2;
+    private EditText Email ,Ppass1 , Ppass2;
     private Button register;
     private FirebaseAuth firebaseAuth;
     private Dialog loadingdialog;
@@ -40,7 +40,7 @@ public class SignInActivity extends AppCompatActivity {
         loadingdialog.getWindow().setBackgroundDrawableResource(R.drawable.progress_background);
         loadingdialog.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
 
-        Eemail = findViewById(R.id.email);
+        Email = findViewById(R.id.email);
         Ppass1 = findViewById(R.id.password);
         Ppass2 = findViewById(R.id.repassword);
         register = findViewById(R.id.registerButton);
@@ -53,7 +53,7 @@ public class SignInActivity extends AppCompatActivity {
 
                 loadingdialog.show();
 
-                String email = Eemail.getText().toString();
+                String email = Email.getText().toString();
                 String password = Ppass1.getText().toString();
                 String repassword = Ppass2.getText().toString();
 
